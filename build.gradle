@@ -1,0 +1,22 @@
+group 'com.dsdtparser'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'dsdtparser.DSDTParserApp'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'commons-codec:commons-codec:1.4'
+    compile 'org.jdesktop:appframework:1.0.3'
+    compile 'de.sciss:jsyntaxpane:1.0.0'
+    compile 'org.jdesktop:swing-worker:1.1'
+    compile 'org.swinglabs:swing-layout:1.0.3'
+}
